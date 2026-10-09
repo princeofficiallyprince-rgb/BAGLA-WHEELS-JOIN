@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Bangla Wheels Simulation Discord SERVER</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at center, #2c2f33, #23272a);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .discord-logo {
+            width: 150px;
+            filter: drop-shadow(0 0 15px #5865f2);
+            margin-bottom: 2rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .title {
+            font-size: 2.5em;
+            color: #ffffff;
+            text-shadow: 0 0 15px #5865f2;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, #ffffff, #5865f2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientShift 5s infinite alternate;
+        }
+
+        .gaming-text {
+            color: #57f287;
+            font-size: 1.2em;
+            margin: 1.5rem 0;
+            text-shadow: 0 0 10px #57f287;
+        }
+
+        .join-btn {
+            padding: 1.5rem 3rem;
+            font-size: 1.5em;
+            background: #5865f2;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 0 25px #5865f280;
+            margin: 2rem 0;
+        }
+
+        .join-btn:hover {
+            transform: scale(1.1) rotate(-2deg);
+            box-shadow: 0 0 40px #5865f2;
+        }
+
+        .join-btn::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, #ffffff44, transparent);
+            transform: rotate(45deg);
+            animation: shine 3s infinite;
+        }
+
+        .server-stats {
+            color: #b9bbbe;
+            margin-top: 2rem;
+            font-size: 1.1em;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            color: #ffffff99;
+            font-size: 0.9em;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        @keyframes shine {
+            0% { left: -50%; }
+            100% { left: 150%; }
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        /* Particle animation */
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            background: #5865f2;
+            border-radius: 50%;
+            animation: particle-float 5s infinite;
+        }
+
+        @keyframes particle-float {
+            0%, 100% { transform: translateY(0); opacity: 0.3; }
+            50% { transform: translateY(-20px); opacity: 0.6; }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <div class="https://cdn.discordapp.com/attachments/1521554021737828412/1556678331758415903/BWS_LOGO.png?backend=b2&ex=6ac5092b&is=6ac3b7ab&hm=c233ba3b65cd205767843de14b51a9d2c14430fc47c8f5971be8e64bdca2897a&">
+        <img src="BWS_LOGO.png" 
+             alt="BWS_LOGO" 
+             class="BWS-LOGO">
+        
+        <h1 class="title">BANGLA WHEELS SIMULATION</h1>
+        
+        <div class="gaming-text">🚚 Ready to convoy? Gear up driver!</div>
+        <div class="gaming-text">⚡ Dominate the virtual highways!</div>
+
+        <a href="https://discord.gg/q43A2BkWVf" 
+           class="join-btn" 
+           target="_blank">
+            JOIN NOW
+        </a>
+
+        <div class="server-stats">
+            OUR STAFF IS BEST BEHAVIOUR | 🛠️ SUPPORT TEAM | 🏆 Competitions 
+        </div>
+    </div>
+
+    <div class="server-stats"></div>
+         BANGLA WHEELS SIMULATION OWNER R.A RAJ.
+         CO OWNER IS FARIS.
+         ADMIN HEAD IS ISHARK.
+         OUR ALL STAFF IS VERY GOOD SERVICE.
+       </div>
+    </div>
+    
+    <footer
+          OFFICIAL BANGLA WHEELS SIMULATION COMMUNITY BY BNGLADESHI MAP
+    </footer>
+
+    <script>
+        // Create animated particles
+        function createParticles() {
+            const particles = document.getElementById('particles');
+            for (let i = 0; i < 30; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.width = Math.random() * 5 + 2 + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.animationDelay = Math.random() * 5 + 's';
+                particles.appendChild(particle);
+            }
+        }
+        createParticles();
+    </script>
+</body>
+</html>
